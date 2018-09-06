@@ -18,9 +18,14 @@ use error::RbtError;
 use rustc_serialize::json::Json;
 use std::env;
 use std::fs;
+use std::panic;
 use url::Url;
 
 fn main() {
+    panic::set_hook(Box::new(|_panic| {
+        // chill
+    }));
+
     _main().unwrap_or_else(error::handle);
 }
 
