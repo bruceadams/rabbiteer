@@ -1,6 +1,6 @@
 [package]
 name = "rabbiteer"
-version = "1.4.1"
+version = "1.5.0"
 authors = ["Martin Algesten <martin@algesten.se>"]
 description = "AMQP/RabbitMQ input/output CLI tool"
 repository = "https://github.com/algesten/rabbiteer-rs"
@@ -10,7 +10,7 @@ readme = "README.md"
 
 [dependencies]
 clap = "2"
-rand = "0.5"
+rand = "0.6"
 conduit-mime-types = "0.7"
 rustc-serialize = "0.3"
 url = "1"
